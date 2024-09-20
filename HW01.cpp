@@ -18,9 +18,18 @@ int main()
 
     while (quotient != 0) {
         remainder = quotient % 2;
-        prev = quotient;
+        binary[index] = remainder + '0'; // converting remainder to a char
+        index++;
+        quotient = quotient / 2;
         //binary (concatenate with remainder)
     }
 
-    cout << binary;
+    cout << "Binary representation : ";
+    for (int i = index - 1; i >= 0; i--) {
+        cout << binary[i];
+    }
+    
+    
+
+    return 0;
 }
