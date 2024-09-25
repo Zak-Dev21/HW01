@@ -21,12 +21,11 @@ int main()
         binary[index] = remainder + '0'; // converting remainder to a char
         index++;
         quotient = quotient / 2;
-        //binary (concatenate with remainder)
     }
 
     cout << "Binary representation : ";
     for (int i = index - 1; i >= 0; i--) {
-        cout << binary[i];
+        cout << binary[i]; //adding binary digits by adding remainders in reverse
     }
     
     
